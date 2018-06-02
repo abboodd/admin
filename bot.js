@@ -53,7 +53,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "BOUNTY..🍫")
+        guild = client.guilds.find("name", "RV..👑")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -73,7 +73,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", "BOUNTY..🍫")
+        guild = client.guilds.find("name", "RV..👑")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -124,7 +124,7 @@ message.channel.send(`**__${invites.find(invite => invite.inviter.id === `${os}`
 
 
 client.on("message", message => {
- if (message.content === "!help") {
+ if (message.content === "r-help") {
         message.react("✅")
            message.react("📬")
   const embed = new Discord.RichEmbed() 
